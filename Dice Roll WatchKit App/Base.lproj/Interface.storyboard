@@ -1,15 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--GreenBackground-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller backgroundImage="GreenBackground" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Dice_Roll_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="DiceOne" id="VGo-U1-Lkc"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="ROLL!" id="tSJ-iP-AF1">
+                            <color key="backgroundColor" red="0.6470822692" green="0.1212409958" blue="0.13309738039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="Tzp-zU-Cme"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="diceImage" destination="VGo-U1-Lkc" id="CQg-8b-lTU"/>
+                        <outlet property="rollButton" destination="tSJ-iP-AF1" id="kQa-GE-knb"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-39" y="28"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DiceOne" width="100" height="100"/>
+        <image name="GreenBackground" width="444.5" height="414"/>
+    </resources>
 </document>

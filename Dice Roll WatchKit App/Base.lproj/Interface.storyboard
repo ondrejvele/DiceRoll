@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
         <!--GreenBackground-->
@@ -11,7 +12,7 @@
             <objects>
                 <controller backgroundImage="GreenBackground" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Dice_Roll_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView alignment="center" verticalAlignment="center" image="DiceOne" id="VGo-U1-Lkc"/>
+                        <imageView alignment="center" verticalAlignment="center" image="DiceOne" animationDuration="1" id="VGo-U1-Lkc"/>
                         <button width="1" alignment="left" verticalAlignment="center" title="ROLL!" id="tSJ-iP-AF1">
                             <color key="backgroundColor" red="0.6470822692" green="0.1212409958" blue="0.13309738039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
